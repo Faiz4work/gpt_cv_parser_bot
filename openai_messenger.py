@@ -2,11 +2,11 @@ from openai import OpenAI
 import pdfplumber
 import re
 from pprint import pprint
-
+from api_key import api_key
 
 def send_message(message):
     # OpenAI API key
-    open_api_key = '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'
+    open_api_key = api_key
     client = OpenAI(
         api_key=open_api_key,
     )
